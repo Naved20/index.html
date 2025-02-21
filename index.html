@@ -209,9 +209,22 @@
             <h2>Declaration</h2>
             <p>I hereby declare that the information provided above is true and correct to the best of my knowledge and belief.</p>
             <p><strong>Place:</strong> Jabalpur</p>
-            <p><strong>Date:</strong> [Current Date]</p>
+            <p><strong>Date:</strong><p id="date"></p></p>
             <p>(Afreen Mansoori)</p>
         </section>
     </div>
+    
+    <script>
+        // Get today's date
+        let today = new Date();
+
+        // Format the date
+        let formattedDate = today.toLocaleDateString();
+
+        // Display the date in the HTML
+        document.getElementById("date").innerText = formattedDate;
+    </script>
+
+
 </body>
 </html>
